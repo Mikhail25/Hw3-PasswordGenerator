@@ -18,3 +18,4 @@ The program includes:
 
 ![Screenshot of shoosing an invalid length](./images/screenshot4.png)
 
+[Link to the web-page itself](https://mikhail25.github.io/Hw3-PasswordGenerator/)
