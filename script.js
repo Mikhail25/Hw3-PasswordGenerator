@@ -80,9 +80,10 @@ function generatePassword(){
   //TODO: Replace variables wit something more dynamic
   var lowerCase = "abcdefghijklmnopqrstuvwxyz";
   var upperCase = "ABCDEFGHIJKLMNOPQRSTUFWXYZ";
-  //var numChars = 1234567890;
   var specialChars = "!@#$%^&*()~";
 
+
+//Loop to ramdomly allocate characters from the char variables to the password variable
  while(passLength > 0){
 
   console.log(passOptions[getRandomInt(numOptions)]);
@@ -110,23 +111,11 @@ function generatePassword(){
   return password;
 }
 
+//Function to randomize whole integers
 function getRandomInt(max) {
   return Math.floor(Math.random() * max);
 }
 
-//    function rand(length, ...ranges) {
-//    var str = "";                                                       // the string (initialized to "")
-//    while(length--) {                                                   // repeat this length of times
-//    var ind = Math.floor(Math.random() * ranges.length);              // get a random range from the ranges object
-//    var min = ranges[ind][0].charCodeAt(0),                           // get the minimum char code allowed for this range
-//         max = ranges[ind][1].charCodeAt(0);                           // get the maximum char code allowed for this range
-//    var c = Math.floor(Math.random() * (max - min + 1)) + min;        // get a random char code between min and max
-//    str += String.fromCharCode(c);                                    // convert it back into a character and append it to the string str
-//   }
-//   return str;                                                         // return str
-// }
-
-// console.log(rand(20, ["a", "f"], ["A", "Z"], ["0", "9"]));
 
 // Add event listener to generate button
 generateBtn.addEventListener("click", writePassword);
