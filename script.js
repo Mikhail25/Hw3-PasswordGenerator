@@ -33,33 +33,24 @@ function generatePassword(){
     }
   }
 
-  //Boolean options (might not need)
-  var addLowercase = false;
-  var addUppercase = false;
-  var addNumeric = false;
-  var addSpecial = false;
 
   //Array and length to hold the options
   var passOptions = [];
   var numOptions = 0;
 
   if(confirm("Do you want to add lowercase characters?")){
-    addLowercase = true;
     passOptions[numOptions] = "lower";
     numOptions++;
   }
   if(confirm("Do you want to add uppercase characters?")){
-    addUppercase = true;
     passOptions[numOptions] = "upper";
     numOptions++;
   }
   if(confirm("Do you want to add numbers?")){
-    addNumeric = true;
     passOptions[numOptions] = "numbers";
     numOptions++;
   }
   if(confirm("Do you want to add special characters?")){
-    addSpecial = true;
     passOptions[numOptions] = "special";
     numOptions++;
   }
